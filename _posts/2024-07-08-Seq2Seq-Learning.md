@@ -1,3 +1,8 @@
+---
+layout: single
+title: "Seq2Seq"
+categories: ML
+---
 # Sequence to Sequence Learning
 
 Sequence to Sequence Learning이란?
