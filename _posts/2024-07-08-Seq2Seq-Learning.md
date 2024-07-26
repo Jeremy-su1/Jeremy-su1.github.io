@@ -5,6 +5,10 @@ categories: ML
 tag: [seq2seq,ML,Deeplearning]
 toc: true
 Typora-root-url: ../
+author_profile: false
+sidebar:
+  nav: "docs"
+search: true
 ---
 # Sequence to Sequence Learning
 
