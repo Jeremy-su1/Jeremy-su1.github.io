@@ -27,12 +27,14 @@ search: true
 
 ![seq2seq-encoder.drawio](/images/2024-07-08-Seq2Seq-Learning/seq2seq-encoder.drawio.png)
 
+- Encoder는 원래의 문장 (그림에서는 "I am a student")을 컴퓨터가 이해할 수 있도록 바꾸는 과정을 의미한다.
 - Encoder RNN은 Context Vector를 뽑기 위해 one of encoding(차수가 클때는 낭비)을 사용한다.
+- input token $x_1,\cdots,x_T$에 대하여 매 시간 “T”마다 one of vector(word vector)를 사용하며, Context vector C는 T시점에서의 RNN의 hidden state, 즉 $h_T$(Encoder time)가 있다.
+- Encoder는 입력 시퀀스의 각 단어를 sequential하게 처리하면서 각 단계에서 hidden state를 업데이트하고, 최종적으로 전체 입력 시퀀스를 대표하는 고정 길이의 벡터(Context Vector)를 생성한다.
 
-- input token $x_1,\cdots,x_T$에 대하여 매 시간 “t”마다 one of vector(word vector)를 사용하며, Context vector C는 T시점에서의 RNN의 hidden state, 즉 $h_T$(Encoder time)
+## S2S Decoder
 
-  ✔︎ Bert : 단어의 중간 지점에서의 구멍을 잘 매꿔주는 model
 
-  ✔︎ GPT : Transformer Decoder처럼
 
-  ✔︎ Elmo : 조동사 구분, 앞뒤 context반영, Can이 명사/동사 구분
+
+
