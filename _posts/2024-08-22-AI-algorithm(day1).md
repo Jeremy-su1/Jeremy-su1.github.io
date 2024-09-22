@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Dialogue"
-categories: English
-tag: [English, Dialogue]
+title: "OOD Detection"
+categories: AI
+tag: [AI, ML, DeepLearning]
 toc: true
 Typora-root-url: ../
 author_profile: false
