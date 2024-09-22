@@ -19,8 +19,8 @@ search: true
 ### Deep Learning
 - ML의 subfield
 - multi-layer neural network 
-```
-https://blogs.nvidia.com/wp-content/uploads/2016/07/Deep_Learning_Icons_R5_PNG.jpg.png
-```
 
-![AI vs. ML vs. Deeplearning](images/2024-08-22-AI-algorithm(day1)/Deep_Learning_Icons_R5_PNG.jpg.png)
+<!-- https://blogs.nvidia.com/wp-content/uploads/2016/07/Deep_Learning_Icons_R5_PNG.jpg.png -->
+
+
+![AI vs. ML vs. Deeplearning](/images/2024-08-22-AI-algorithm(day1)/Deep_Learning_Icons_R5_PNG.jpg.png)
