@@ -77,3 +77,10 @@ search: true
     # 복원되었는지 확인
     $ kubectl get pods
     ```
+
+## Kubernetes Cluster
+- Kubernetes Packages
+  - kubeadm : cluster를 부트스트랩하는 명령
+  - kubelet : Pod와 Container 시작과 같은 작업을 수행하는 component
+  - kubectl : cluster와 통신하기 위한 command line utility
+    [kubernetes packages](https://kubernetes.io/images/docs/kubernetes-cluster-architecture.svg)
