@@ -61,7 +61,9 @@ search: true
     /tmp/etcd-backup
     $ sudo tree /var/lib/etcd-new/
     ```
+
     - etcd Pod에 복원된 etcd-data 위치를 적용하고 Pod 다시 시작
+    
     ```
     $ sudo vi /etc/kubernetes/manifests/etcd.yaml
     ---
