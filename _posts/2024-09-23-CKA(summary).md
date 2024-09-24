@@ -32,20 +32,10 @@ search: true
         - 단계 1) snapshot 파일을 DB 파일로 복원
         - 단계 2) 동작 중인 etcd Pod의 구성정보를 복원된 DB위치로 수정 적용
         - $ etdctl snapshot restore <snapshot filename>
-
-    ```
-    ETCD를 호스팅 할 시스템에 ssh 로그인
-      $ ssh k8s-master
-    • etcdctl 툴이 설치 여부 확인
-      $ etcdctl version
-    • ETCD Backup
+    
+    - ETCD Backup
     [K8s backup](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster)
-    • 현재 etcd 상태를 수정 하고 snapshot 파일을 이용해 복원했을 때 원래대로 복원되었는지 확인
-    $ kubectl get pods
-    $ kubectl delete deployment XXXXX
-    $ kubectl get pods
-    • ETCD Restore
-    [K8s restore](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#restoring-an-etcd-cluster)
+    ```
     trusted-ca-file 확인
     $ ps -ef | grep kube | grep trusted-ca-file
     cert-file 확인
@@ -57,16 +47,29 @@ search: true
     --cert=/etc/kubernetes/pki/etcd/server.crt \
     --key=/etc/kubernetes/pki/etcd/server.key \
     snapshot save /tmp/etcd-backup
+    ```
+    - 현재 etcd 상태를 수정 하고 snapshot 파일을 이용해 복원했을 때 원래대로 복원되었는지 확인
+    ```
+    $ kubectl get pods
+    $ kubectl delete deployment XXXXX
+    $ kubectl get pods
+    ```
+    - ETCD Restore
+    [K8s restore](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#restoring-an-etcd-cluster)
+    ```
     $ sudo ETCDCTL_API=3 etcdctl --data-dir=/var/lib/etcd-new snapshot restore
     /tmp/etcd-backup
     $ sudo tree /var/lib/etcd-new/
-    • etcd Pod에 복원된 etcd-data 위치를 적용하고 Pod 다시 시작
+    ```
+    - etcd Pod에 복원된 etcd-data 위치를 적용하고 Pod 다시 시작
+    ```
     $ sudo vi /etc/kubernetes/manifests/etcd.yaml
-    …
+    ---
     - hostPath:
     path: /var/lib/etcd-new
     type: DirectoryOrCreate
     name: etcd-data
+
     #docker 명령으로 etcd가 restart 되었는지 확인
     $ sudo docker ps -a | grep etcd
     # 복원되었는지 확인
