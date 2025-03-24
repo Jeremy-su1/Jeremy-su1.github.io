@@ -41,7 +41,7 @@ I'm Jeremy, an infrastructure engineer with about 10 years of experience, now ex
 
 - 📧 Email: ahn.suwon725@gmail.com
 - 💼 GitHub: [github.com/Jeremy-su1](https://github.com/Jeremy-su1)  
-- 📄 Resume: [PDF Download (Coming Soon)]
+<!-- # - 📄 Resume: [PDF Download (Coming Soon)] -->
 
 ---
 
