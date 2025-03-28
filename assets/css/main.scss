@@ -7,3 +7,11 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.toc {
+    position: sticky;
+    top: 100px; /* 상단에서 얼마나 떨어질지 조정 가능 */
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+  

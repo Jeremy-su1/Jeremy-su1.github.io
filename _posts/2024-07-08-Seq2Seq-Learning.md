@@ -4,6 +4,7 @@ title: "Seq2Seq"
 categories: ML
 tag: [seq2seq,ML,Deeplearning]
 toc: true
+toc_sticky: true
 Typora-root-url: ../
 author_profile: false
 sidebar:

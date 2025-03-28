@@ -4,6 +4,7 @@ title: "CKA Certification"
 categories: Devops
 tag: [CKA, CKAD]
 toc: true
+toc_sticky: true
 Typora-root-url: ../
 author_profile: false
 sidebar:

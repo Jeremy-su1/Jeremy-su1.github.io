@@ -4,6 +4,7 @@ title: "OOD Detection"
 categories: AI
 tag: [AI, ML, DeepLearning]
 toc: true
+toc_sticky: true
 Typora-root-url: ../
 author_profile: false
 sidebar:

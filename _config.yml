@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "Jeremy"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Infra Engineer & AI Researcher"
+  avatar           : "/assets/images/avatar.webp"
+  bio              : "Infra Engineer | AI Researcher | LLM Enthusiast"
   location         : "South Korea"
   email            :
   links:
