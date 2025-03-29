@@ -48,4 +48,4 @@ I'm Jeremy, an infrastructure engineer with about 10 years of experience, now ex
 > I hope this blog becomes a helpful guide for those looking to connect infrastructure and AI, just like I do.  
 > Feel free to reach out anytime for questions or collaboration ideas!
 
-![Hits](https://hits.sh/jeremy-su1.github.io.svg?style=flat-square&label=visits&color=blue)
+<!-- ![Hits](https://hits.sh/jeremy-su1.github.io.svg?style=flat-square&label=visits&color=blue) -->
