@@ -18,10 +18,10 @@
 
     {% unless site.atom_feed.hide %}
       <li>
-        <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">
+        <!-- <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">
           <i class="fas fa-fw fa-rss-square" aria-hidden="true"></i>
           {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}
-        </a>
+        </a> -->
         <!-- ✅ 👇 바로 옆에 방문자 수 뱃지 표시 -->
         <span style="margin-left: 10px; font-size: 0.65rem;">
           👀
