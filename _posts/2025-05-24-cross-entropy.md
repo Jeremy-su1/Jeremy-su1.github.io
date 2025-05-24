@@ -10,6 +10,7 @@ author_profile: false
 sidebar:
   nav: "docs"
 search: true
+math: true
 ---
 
 ## Cross Entropy (교차 엔트로피)란?

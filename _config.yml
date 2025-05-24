@@ -165,6 +165,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _includes/head/custom.html
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -323,3 +324,6 @@ defaults:
       comments: true
       share: true
       related: true
+
+# Apply the LaTeX(MathJax)
+math: true
