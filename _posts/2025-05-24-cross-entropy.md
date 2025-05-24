@@ -1,7 +1,7 @@
 ---
 title: "Cross Entropy란? 머신러닝 손실 함수의 핵심 개념"
 date: 2025-05-19
-categories: [Machine Learning, Deep Learning]
+categories: [ML, DeepLearning]
 tags: [Cross Entropy, Loss Function, Softmax, Classification, Entropy]
 toc: true
 toc_sticky: true
