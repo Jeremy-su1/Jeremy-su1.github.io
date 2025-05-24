@@ -1,3 +1,48 @@
-<!-- start custom footer snippets -->
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("pre.highlight").forEach(block => {
+      const button = document.createElement("button");
+      button.className = "copy-code-button";
+      button.type = "button";
+      button.innerHTML = '<i class="fas fa-copy"></i>';
 
-<!-- end custom footer snippets -->
+      button.addEventListener("click", () => {
+        navigator.clipboard.writeText(block.innerText).then(() => {
+          button.innerHTML = '<i class="fas fa-check"></i>';
+          button.classList.add("copied");
+          setTimeout(() => {
+            button.innerHTML = '<i class="fas fa-copy"></i>';
+            button.classList.remove("copied");
+          }, 2000);
+        });
+      });
+
+      block.style.position = "relative";
+      block.appendChild(button);
+    });
+  });
+</script> -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("pre.highlight").forEach(block => {
+      const button = document.createElement("button");
+      button.className = "copy-btn";
+      button.setAttribute("aria-label", "Copy code");
+      button.innerHTML = '<i class="fas fa-copy"></i>';
+
+      button.addEventListener("click", () => {
+        navigator.clipboard.writeText(block.innerText).then(() => {
+          button.innerHTML = '<i class="fas fa-check"></i>';
+          button.classList.add("copied");
+          setTimeout(() => {
+            button.innerHTML = '<i class="fas fa-copy"></i>';
+            button.classList.remove("copied");
+          }, 1500);
+        });
+      });
+
+      block.style.position = "relative";
+      block.appendChild(button);
+    });
+  });
+</script>
