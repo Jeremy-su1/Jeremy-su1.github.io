@@ -3,6 +3,13 @@ title: "Cross Entropy란? 머신러닝 손실 함수의 핵심 개념"
 date: 2025-05-19
 categories: [Machine Learning, Deep Learning]
 tags: [Cross Entropy, Loss Function, Softmax, Classification, Entropy]
+toc: true
+toc_sticky: true
+Typora-root-url: ../
+author_profile: false
+sidebar:
+  nav: "docs"
+search: true
 ---
 
 ## Cross Entropy (교차 엔트로피)란?
