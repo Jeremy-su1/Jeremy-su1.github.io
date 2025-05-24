@@ -1,7 +1,7 @@
 ---
 title: "로드 밸런서 (Load Balancer)의 개념과 종류"
 date: 2025-03-28
-categories: [Networking, Infrastructure]
+categories: [Cloud]
 tags: [Load Balancer, LB, L4, L7, Cloud, HAProxy, Nginx]
 toc: true
 toc_sticky: true

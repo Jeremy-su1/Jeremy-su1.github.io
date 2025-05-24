@@ -1,7 +1,7 @@
 ---
 title: "LLM에서 자주 등장하는 Cosine Similarity 개념 정리"
 date: 2025-05-19
-categories: [LLM, NLP, Embedding]
+categories: [ML, NLP]
 tags: [cosine similarity, 임베딩, NLP, LLM, 벡터 유사도]
 toc: true
 toc_sticky: true
