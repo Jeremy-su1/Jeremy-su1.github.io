@@ -120,9 +120,20 @@ class CNNModel(BaseModel):
 * 기존 클래스를 확장하여 재사용성 향상
 * 공통 로직은 부모 클래스에 정의
 * `is-a` 관계 표현에 적합
+* Parent(BaseModel)-Child(CNNModel)
 
 👉 ML/DL 코드에서 매우 빈번하게 사용되는 구조
 
+```python
+class Parent:
+    def greet(self):
+        return "Parent greet"
+class Chile(Parent):
+    def greet(self):
+        return super().greet() + " + child greet"
+```
+* Overriding: Parent Method를 child가 재정의하는 것으로 parent의 기능을 그대로 가지고 오는것
+* super() : 직전 method의 기능을 불러옴 -> Parent Method를 호출하면서 기능을 확장할 수 있다.
 ---
 
 ## 6. 캡슐화(Encapsulation)
