@@ -1,5 +1,5 @@
 ---
-title: "임베딩 벡터의 정규화와 Cosine Similarity의 관계"
+title: "Python Class"
 date: 2025-05-19
 categories: [ML, DeepLearning,NLP]
 tags: [python]
