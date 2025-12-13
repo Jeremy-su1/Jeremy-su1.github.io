@@ -1,8 +1,8 @@
 ---
-title: "Python Class"
+title: "AI Advanced Summary"
 date: 2025-05-19
 categories: [ML, DeepLearning,NLP]
-tags: [python]
+tags: [AI]
 toc: true
 toc_sticky: true
 Typora-root-url: ../
