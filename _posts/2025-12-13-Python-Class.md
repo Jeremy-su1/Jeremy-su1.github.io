@@ -1,6 +1,6 @@
 ---
 title: "Python Class"
-date: 2025-05-19
+date: 2025-12-13
 categories: [ML, DeepLearning,NLP]
 tags: [python]
 toc: true
