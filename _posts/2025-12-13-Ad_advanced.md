@@ -107,6 +107,6 @@ search: true
   출력 문장을 자연스럽게 생성   
   
 ## **Transformer가 번역에서 뛰어난 성능을 보이는 이유**  
-  - Transformer가 RNN보다 훨씬 긴 맥락을 이해  
-      . Encoder: 토큰의 길이가 길어져도 내용을 잊어버리지 않음 -> BERT  
-      . Decoder: 중요도를 잘 이해하고 출력 문장을 자연스럽게 생성 -> GPT  
+* Transformer가 RNN보다 훨씬 긴 맥락을 이해  
+  - Encoder: 토큰의 길이가 길어져도 내용을 잊어버리지 않음 -> BERT  
+  - Decoder: 중요도를 잘 이해하고 출력 문장을 자연스럽게 생성 -> GPT  
