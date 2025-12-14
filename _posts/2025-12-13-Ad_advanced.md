@@ -79,32 +79,32 @@ search: true
   - Transformer  
   ![Transformer](/images/2025-12-13-Ad_advanced/transformer2.png?version%3D1765633194926)  
   . Self-Attention: 맥락을 반영하여, 어디에 집중할 것인가?   
-      -> 이 문장에서 이 단어는 어떤 의미인가? Attention을 통과하면서 각각의 토큰들과 연산 -> 단어가 단어에 영향을 미치면서 문장 내에서 단어의 의미 보존  
-      -> self-attention을 통과하면 맥락이 반영된 토큰별 벡터가 되는것.  
-      Multi-Head Attention, Masked Multi-Head Attention에 입력되어지는 Q,K,V가 전부 self임  
-      Self-Attention을 통해 인식률이 좋은 vector로 다시 뽑는 것이 주 목적 -> 동일한 차원에서 더 좋은 representation을 뽑는것 -> Feature vector를 기계로 뽑는것  
+      + -> 이 문장에서 이 단어는 어떤 의미인가? Attention을 통과하면서 각각의 토큰들과 연산 -> 단어가 단어에 영향을 미치면서 문장 내에서 단어의 의미 보존  
+      + -> self-attention을 통과하면 맥락이 반영된 토큰별 벡터가 되는것.  
+      + Multi-Head Attention, Masked Multi-Head Attention에 입력되어지는 Q,K,V가 전부 self임  
+      + Self-Attention을 통해 인식률이 좋은 vector로 다시 뽑는 것이 주 목적 -> 동일한 차원에서 더 좋은 representation을 뽑는것 -> Feature vector를 기계로 뽑는것  
   . FFNN (Feed-Forward Neural Network): 어떤 지식을 활용하여 이해할 것인가?  
-      -> MLP(Multi-Layer Perceptron)  
-      -> deep learning network / 비선형성을 추가하여 깊은 관계를 학습  
+      + -> MLP(Multi-Layer Perceptron)  
+      + -> deep learning network / 비선형성을 추가하여 깊은 관계를 학습  
   . Add & Norm: 해당 Layer를 통해 layer를 통과한 결과와 통과하기 전 결과를 합쳐서 평균  
   . Linear: vector를 가지고 token의 가짓수만큼의 vector로 다시 확장  
   . Softmax: 확률분포로 변경   
 
 ## Encoder & Decoder
- <Encoder>  
-  6x layer를 쌓으면서, 파라미터의 수를 늘리고 복잡한 의미 이해  
-  최종 출력: 입력 문장의 토큰별 의미 벡터 출력  
-  Multi-Head Attention -  self-attention을 여러개 병렬로 사용  
-  계산: N^2  
-  양방향 맥락 (각각 계산)  
-   입력 문장의  의미를 효과적으로 파악  
- <Decoder>  
-  목적: 최종 문장 출력  
-  input: encoder결과 + 출력 문장의 앞부분  
-    - Encoder 결과 + <BOS> / <BOS> I / <BOS> I had / <BOS> I had meal  
-  output: 다음 토큰의 확률 분포  
-  단방향 맥락 (앞 부분의 단어만 계산)  
-  출력 문장을 자연스럽게 생성   
+* Encodeer  
+  - 6x layer를 쌓으면서, 파라미터의 수를 늘리고 복잡한 의미 이해  
+  - 최종 출력: 입력 문장의 토큰별 의미 벡터 출력  
+  - Multi-Head Attention -  self-attention을 여러개 병렬로 사용  
+  - 계산: N^2  
+  - 양방향 맥락 (각각 계산)  
+  - 입력 문장의  의미를 효과적으로 파악  
+* Decoder 
+  - 목적: 최종 문장 출력  
+  - input: encoder결과 + 출력 문장의 앞부분  
+  - Encoder 결과 + <BOS> / <BOS> I / <BOS> I had / <BOS> I had meal  
+  - output: 다음 토큰의 확률 분포  
+  - 단방향 맥락 (앞 부분의 단어만 계산)  
+  - 출력 문장을 자연스럽게 생성   
   
 ## **Transformer가 번역에서 뛰어난 성능을 보이는 이유**  
 * Transformer가 RNN보다 훨씬 긴 맥락을 이해  
