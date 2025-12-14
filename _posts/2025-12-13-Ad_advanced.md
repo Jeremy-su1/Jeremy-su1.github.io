@@ -64,7 +64,7 @@ search: true
 
 * Encoder / Decoder의 이해  
   - Encoder: 맥락을 반영한 토큰 개수만큼의 벡터(병렬적 생성)  
-  - RNN: 나는 -> 밥을 -> 먹었다.(Short term memory)![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/suwon/Desktop/Project/Jeremy-su1-github-blog/Jeremy-su1.github.io/images/2025-12-13-Ad_advanced/Untitled.png?version%3D1765616582787)
+  - RNN: 나는 -> 밥을 -> 먹었다.(Short term memory)![RNN](/images/2025-12-13-Ad_advanced/Untitled.png?version%3D1765616582787)
   - transformer: 각 토큰들을 병렬적으로 개수를 유지하면서 생성  
 
   - Decoder: Decoder입력은 Encoder의 출력값 + 현재까지의 출력 문장  
@@ -72,12 +72,12 @@ search: true
     . Decoder 입력: <BOS> -> I -> <BOS> I -> had -> <BOS> I had -> Meal -> <BOS> I had Meal -> <EOS> **자기 회귀적(Auto Regressive) 출력 방식**  
 
   - Positional Encoding: 위치 인코딩 벡터를 통해 토큰의 위치 구분하기 -> 문장의 구조롤 이해하기 위한 처리 방식 -> 위치 인코딩 벡터를 통해 토큰의 위치 구분하기  
-  ![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/suwon/Desktop/Project/Jeremy-su1-github-blog/Jeremy-su1.github.io/images/2025-12-13-Ad_advanced/PositionalEncoding.png?version%3D1765617049816)  
+  ![Positional Encoding](/images/2025-12-13-Ad_advanced/PositionalEncoding.png?version%3D1765617049816)  
     . 각각의 벡터의 임베딩 벡터를 조금씩 회전시키는 'RoPE(Roterry Positional Encoding)'하는 회전 기반 방법 사용  
     . 목적: input을 받았을 때 각각의 위치를 기억, Decoder에서 중간 출력을 받았을 때 각각의 위치 기억!  
 
   - Transformer  
-  ![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/suwon/Desktop/Project/Jeremy-su1-github-blog/Jeremy-su1.github.io/images/2025-12-13-Ad_advanced/transformer2.png?version%3D1765633194926)  
+  ![Transformer](/images/2025-12-13-Ad_advanced/transformer2.png?version%3D1765633194926)  
   . Self-Attention: 맥락을 반영하여, 어디에 집중할 것인가?   
       -> 이 문장에서 이 단어는 어떤 의미인가? Attention을 통과하면서 각각의 토큰들과 연산 -> 단어가 단어에 영향을 미치면서 문장 내에서 단어의 의미 보존  
       -> self-attention을 통과하면 맥락이 반영된 토큰별 벡터가 되는것.  
