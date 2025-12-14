@@ -37,12 +37,12 @@ search: true
   - llm대부분이 트랜스포머 기반  
   - **Attention is All you need**  
   - 2017년 이전 주요 과제 = 문장 변환(seq to seq)  
-  - 기존 모델(RNN(Recurrent Neural Network) 등) 한계: 문장이 길면 내용 잊음 -> Transformer는 긴 Context처리 강점이 있다.  
-    @ Limitation of Recurrent Model  
-       1) Recurrent Connection은 정보 손실 유발 <- time t가 길어질수록 최초 t의 영향이 줄어듬  
-       2) vanishing gradients와 같은 문제로 학습이 어려움  
-       3) 병렬처리가 어려움으로 사용할 수 있는 Data양이 적음 -> 병렬이 어려운 이유? Sequentail 처리 -> **앞의 결과가 뒤의 결과에 영향을 미침**  
- - Transformer도 초창기에는 seq to seq를 하기위한 목적이였음(번역)  
+  - 기존 모델(RNN(Recurrent Neural Network) 등) 한계: 문장이 길면 내용 잊음 -> Transformer는 긴 Context처리 강점이 있다.    
+    @ Limitation of Recurrent Model       
+       1) Recurrent Connection은 정보 손실 유발 <- time t가 길어질수록 최초 t의 영향이 줄어듬     
+       2) vanishing gradients와 같은 문제로 학습이 어려움       
+       3) 병렬처리가 어려움으로 사용할 수 있는 Data양이 적음 -> 병렬이 어려운 이유? Sequentail 처리 -> **앞의 결과가 뒤의 결과에 영향을 미침**      
+ - Transformer도 초창기에는 seq to seq를 하기위한 목적이였음(번역)    
  
 * Transformer structure  
   - Encoder: 입력 문장을 받아 의미를 벡터로 계산, Decoder: 인코더 결과를 받아 출력 문장 생성  
