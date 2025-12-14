@@ -32,7 +32,7 @@ search: true
   - 단어보다 작고, 글자 하나보다는 큼  
   - 토근 기반 임베딩: 임베딩을 단어가 아닌 토큰 레벨로 계산, 토큰 간 관계를 분석해 맥락(Context) 이해  
 
-* **Transformer**
+## **Transformer**
   - 2017년 구글 개발/인용수 19만번  
   - llm대부분이 트랜스포머 기반  
   - **Attention is All you need**  
@@ -90,6 +90,7 @@ search: true
   . Linear: vector를 가지고 token의 가짓수만큼의 vector로 다시 확장  
   . Softmax: 확률분포로 변경   
 
+## Encoder & Decoder
  <Encoder>  
   6x layer를 쌓으면서, 파라미터의 수를 늘리고 복잡한 의미 이해  
   최종 출력: 입력 문장의 토큰별 의미 벡터 출력  
@@ -105,7 +106,7 @@ search: true
   단방향 맥락 (앞 부분의 단어만 계산)  
   출력 문장을 자연스럽게 생성   
   
- **Transformer가 번역에서 뛰어난 성능을 보이는 이유**  
+## **Transformer가 번역에서 뛰어난 성능을 보이는 이유**  
   - Transformer가 RNN보다 훨씬 긴 맥락을 이해  
       . Encoder: 토큰의 길이가 길어져도 내용을 잊어버리지 않음 -> BERT  
       . Decoder: 중요도를 잘 이해하고 출력 문장을 자연스럽게 생성 -> GPT  
