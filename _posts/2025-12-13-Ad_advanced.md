@@ -1,5 +1,5 @@
 ---
-title: "AI Advanced Summary"
+title: "AI Advanced Keywords"
 date: 2025-12-13
 categories: [ML, DeepLearning,NLP]
 tags: [AI]
