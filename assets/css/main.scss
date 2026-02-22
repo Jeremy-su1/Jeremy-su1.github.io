@@ -10,9 +10,9 @@ $x-large: 1600px;
 $max-width: $x-large;
 
 /* (선택) TOC/사이드바도 같이 조정 */
-$right-sidebar-width-narrow: 200px;
-$right-sidebar-width: 280px;
-$right-sidebar-width-wide: 360px;
+//$right-sidebar-width-narrow: 200px;
+//$right-sidebar-width: 280px;
+//$right-sidebar-width-wide: 360px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
