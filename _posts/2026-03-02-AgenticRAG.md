@@ -18,7 +18,7 @@ classes: wide
 
 RAG는 이미 표준이다.     
 대부분의 기업은 다음과 같은 구조를 채택하고 있다:     
-![Native RAG](</images /2026-03-02-agenticrag/Native RAG.webp>)
+![Native RAG](</images/2026-03-02-agenticrag/Native RAG.webp>)
 
 기본 RAG의 동작은 단순하다:     
 1) 사용자 질문을 임베딩한다.     
@@ -47,7 +47,7 @@ Agentic RAG는 단순히 Retrieval을 여러 번 수행하는 것이 아니다.
 LLM이 스스로 계획을 세우고, 필요한 정보를 찾고, 도구를 실행하고, 결과를 검증하는 루프 구조를 가진다.     
 
 구조적으로는 다음과 같이 설명할 수 있다.     
-![Single Agentic RAG](</images /2026-03-02-agenticrag/Single_Agent_RAG_System_(Router)-ae2ec18616941504070d6b2a7210a358.png>)
+![Single Agentic RAG](</images/2026-03-02-agenticrag/Single_Agent_RAG_System_(Router)-ae2ec18616941504070d6b2a7210a358.png>)
 
 Agentic Loop     
 1) Planning     
