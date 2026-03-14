@@ -12,7 +12,7 @@ sidebar:
 search: true
 classes: wide
 ---
-# AI 용어가 너무 많다: Agentic AI, AI Agent, LangGraph, 그리고 2026년 흐름 한눈에 보기
+# AI 용어가 너무 많다: Agentic AI, AI Agent,,,, 그리고 2026년 흐름 한눈에 보기
 요즘 AI 관련 글을 보다 보면 비슷해 보이지만 미묘하게 다른 용어들이 계속 등장합니다.  
 AI Agent, Agentic AI, workflow, orchestration, multi-agent, MCP, context engineering 같은 표현이 대표적입니다. 각각 따로 보면 이해가 되지만, 전체 그림에서 어떤 관계인지 한 번에 정리된 자료는 많지 않습니다.    
 
